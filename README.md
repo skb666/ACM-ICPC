@@ -1,2 +1,2 @@
-# algorithm
+# data structure & algorithm
 c/c++
