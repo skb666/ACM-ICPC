@@ -4,17 +4,13 @@
 using namespace std;
 
 int main(){
-    long long int n,m;
+    __int64 n,m;
     double sum;
     int count=1;
-    while((cin>>n>>m)&&(n!=0&&m!=0)){
+    while((cin>>n>>m)&&n&&m){
         sum=0;
-        for(int i=n;i<=m;i++){
-            if(i<=5e4)sum+=1.0/(i*i);
-            else break;
-        }
-        if(sum>=1e-5)printf("Case %d: %.5lf\n",count,sum);
-        else printf("Case %d: %.5lf\n",count,1e-5);
+        for(__int64 i=n;i<=m;i++)sum+=1.0/(i*i);
+        printf("Case %d: %.5f\n",count,sum);
         count++;
     }
     return 0;
