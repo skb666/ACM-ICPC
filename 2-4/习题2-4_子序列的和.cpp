@@ -5,12 +5,13 @@ using namespace std;
 
 int main(){
     long long int n,m;
-    double sum,t;
+    double sum;
     int count=1;
     while((cin>>n>>m)&&(n!=0&&m!=0)){
         sum=0;
         for(int i=n;i<=m;i++){
             if(i<=5e4)sum+=1.0/(i*i);
+            else break;
         }
         if(sum>=1e-5)printf("Case %d: %.5lf\n",count,sum);
         else printf("Case %d: %.5lf\n",count,1e-5);
