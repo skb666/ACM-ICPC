@@ -3,6 +3,7 @@
 #include<cstdio>
 #include<math.h>
 using namespace std;
+
 #define PI 3.1415926535
 int main(){
     int n;
