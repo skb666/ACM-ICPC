@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-    __int64 n,count=0;
+    long long n,count=0;
     cin>>n;
     while(n>1){
         if(n%2)n=3*n+1;
